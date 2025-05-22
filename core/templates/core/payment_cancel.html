@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Payment Cancelled - Oastel</title>
+  <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+  <link rel="stylesheet" href="{% static 'core/css/tours.css' %}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  {% include 'core/navbar.html' %}
+
+  <div class="confirmation-wrapper" style="min-height: 80vh; display: flex; align-items: center; justify-content: center; background-color: #f8f8f8;">
+    <div class="confirmation-card" style="
+      background: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      width: 125%;
+      max-width: 1025px;
+      text-align: center;
+      height: 393px;
+    ">
+      <h2 style="font-size: 45px; font-weight: 600; margin-bottom: 20px; color: #c0392b;">Payment Cancelled</h2>
+      <p style="font-size: 21px; color: #333; margin-bottom: 12px;">
+        Your payment was not completed. If you encountered an issue, please try again.
+      </p>
+      <p style="font-size: 20px; color: #666;">
+        No worries — you can return to your adventure and proceed again.
+      </p>
+      <a href="{% url 'home' %}" style="
+        display: inline-block;
+        margin-top: 25px;
+        text-decoration: underline;
+        color: #009172;
+        font-weight: 500;
+      ">Back to Home</a>
+    </div>
+  </div>
+
+  {% include 'core/footer.html' %}
+
+</body>
+</html>

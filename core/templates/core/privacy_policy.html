@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Privacy Policy</title>
+  <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+
+    body {
+    font-family: 'Inter', sans-serif;
+  }
+
+  .terms-container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: center;
+}
+    .about-box {
+      flex: 1;
+      background: #f7f7f7;
+      padding: 30px;
+      border-radius: 12px;
+      min-width: 600px;
+      max-width: 100%;
+    }
+    .about-box h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #004d2f;
+    }
+    .about-box ul {
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    .about-box ul li {
+      margin-bottom: 8px;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+{% include 'core/navbar.html' %}
+
+<section class="booking-wrapper" style="display: flex; justify-content: center; padding: 50px 20px;">
+
+  <div class="terms-container">
+
+  <div class="about-box">
+    <h2>Terms and Conditions</h2>
+
+    <strong>Confirmation:</strong>
+    <ul>
+      <li>You will receive a booking confirmation within minutes.</li>
+      <li>If you do not receive it, please contact our customer support via WhatsApp.</li>
+    </ul>
+
+    <strong>Cancellation Policy:</strong>
+    <ul>
+      <li>Full refund available if cancelled at least 72 hours before the activity starts.</li>
+      <li>No cancellations, refunds, or date changes allowed within 72 hours of the activity.</li>
+    </ul>
+
+    <strong>Hotel Pick-Up Information:</strong>
+    <ul>
+      <li>Please arrive outside your hotel’s main gate 5 minutes before your selected pick-up time.</li>
+      <li>Provide your hotel name and address at the checkout page.</li>
+      <li>Pick-up coverage areas: Tanah Rata, Golden Hill, Brinchang, and Kea Farm only.</li>
+      <li>Child seats are not available for this activity.</li>
+      <li>Children must be accompanied by an adult at all times.</li>
+    </ul>
+
+    <strong>Prohibitions & Limitations:</strong>
+    <ul>
+      <li>This activity is not recommended for individuals with impaired physical mobility.</li>
+      <li>This activity is not recommended for individuals with certain medical conditions such as high blood pressure, epilepsy, etc.</li>
+    </ul>
+
+    <strong>Accessibility:</strong>
+    <ul>
+      <li>This activity is not stroller-accessible and not wheelchair-accessible.</li>
+    </ul>
+
+    <strong>Important Notes:</strong>
+    <ul>
+      <li>Entrance fees, food, and beverages are not included. Please bring sufficient cash.</li>
+      <li>Weather conditions may affect the view; clear weather cannot be guaranteed.</li>
+      <li>This tour is for sightseeing purposes only.</li>
+      <li>Transport is only for tour participants. It is not a transfer service to other destinations.</li>
+      <li>Luggage and backpacks are not permitted during or after the tour.</li>
+    </ul>
+  </div>
+ </div>
+</section>
+
+{% include 'core/footer.html' %}
+
+</body>
+</html>
