@@ -28,7 +28,7 @@ SECRET_KEY = config('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+
 
 import cloudinary
 from decouple import config
@@ -212,6 +212,7 @@ import os
 
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = ['oastel.onrender.com', 'your-custom-domain.com']
+ALLOWED_HOSTS = ['oastel-clean.onrender.com', '127.0.0.1', 'localhost']
+
 
 
