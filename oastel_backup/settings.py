@@ -208,6 +208,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # This must NOT be set to Cloudinary anymore
 
+import os
 
+DEBUG = os.getenv('DEBUG', 'False') == 'True'
+
+ALLOWED_HOSTS = ['oastel.onrender.com', 'your-custom-domain.com']
 
 
