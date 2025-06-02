@@ -37,7 +37,7 @@
   letter-spacing: -0.04em;
   color: #004d2f !important;
   text-decoration: none;
-  margin-left: -26px !important;
+  margin-left: 26px !important;
   flex-shrink: 0;
 }
 
@@ -73,14 +73,14 @@
     justify-content: space-between;
     gap: 50px;
     padding: 50px 5vw;
-    margin: 0 auto;
+    margin: -14px auto;
     max-width: 1440px;
     flex-wrap: wrap; /* 👈 allows items to drop in smaller screens */
   }
   
   /* Banner Text Styling */
   .banner-text {
-    max-width: 45%;
+    max-width: 27%;
     flex: 1; /* Ensures proper alignment */
   }
   .banner-text h1 {
@@ -89,7 +89,7 @@
     color: #262626;
     font-family: 'Gilroy-SemiBold', sans-serif;
     line-height: 1.1;
-    margin-bottom: 26px;
+    margin-bottom: -3px;
     margin-top: -1px;
 }
   
@@ -140,6 +140,7 @@
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.15);
+    margin-bottom: 64px;
   }
   
   
@@ -195,15 +196,16 @@
     font-weight: 600;
   }
 
+
 .booking-section {
     width: 100%;
-    max-width: 1400px;
+    max-width: 1316px;
     padding: 30px;
-    height: 192px;
+    height: 195px;
     background-color: #F9F9F9;
     border-radius: 50px;
     position: relative;
-    margin: -11px auto 0 auto;
+    margin: -58px auto 0 auto;
     display: flex;
 
     flex-direction: column;
@@ -254,7 +256,7 @@ a.booking-card {
 
 a.booking-card h3 {
   text-decoration: none;    /* ✅ Specifically removes underline from h3 */
-  color: inherit;
+  
 }
 
 
@@ -302,7 +304,7 @@ a.booking-card h3 {
 
 .perks-section {
   background-color: #F3F8F7;
-  padding: 80px 180px;
+  padding: 85px 180px;
   width: 100%;
   margin-top: 100px; /* 👈 Adds spacing above */
 }
@@ -336,7 +338,7 @@ a.booking-card h3 {
   line-height: 100%;
   letter-spacing: -0.06em;
   color: #000000;
-  margin: 38px;
+  margin: 19px;
   width: 1468px;
   height: 36px;
 }
@@ -533,7 +535,7 @@ a.booking-card h3 {
   display: flex;
   flex-direction: column;
   gap: 24px;
-  padding: 0px 29px;
+  padding: 0px 1px;
 }
 
 /* FAQ Item */
@@ -1058,9 +1060,9 @@ html {
 .perk-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 108px;
+  gap: 88px;
   
-  padding: 20px 43px;
+  padding: 47px 47px;
   margin-top: 60px;
 }
 
@@ -1220,14 +1222,7 @@ html {
     width: 100%;
   }
 
-  .perks-subtitle {
-    position: relative;
-    left: 256px;
-    top: -75px;
-    margin-top: 20px;
-    width: 445px;
-    height: 72px;
-}
+ 
 
   .partners-section {
     text-align: center;
@@ -1261,13 +1256,767 @@ html {
     flex-shrink: 0;
   }
 
+  
+
+}
+
+
+
+@media (max-width: 1280px) {
   .perks-subtitle {
     position: relative;
-    left: -513px;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 445px;
+    height: auto;
+    text-align: center;
+    left: -463px;
+    top: 43px;
+
+  }
+}
+
+@media (max-width: 1024px) {
+  .perks-subtitle {
+    /* ✅ You don't need to repeat layout-breaking styles here */
+    margin: 20px auto;
+    width: 100%;
+    max-width: 445px;
+    text-align: center;
+    left: 262px;
+    top: -68px;
+    position: relative;
+  }
+}
+
+
+
+@media (max-width: 1440px) {
+  .perk-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px; /* 🔁 reduced from 88px for better fit on 1440px */
+    padding: 24px;
+    margin-top: 77px;
+    justify-content: center; /* ✅ centers the perk cards */
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1728px) {
+  .perk-cards {
+            display: flex;
+
+        flex-wrap: wrap;
+        gap: 88px;
+        padding: 27px 156px;
+        margin-top: 60px;
+        margin-left: 3px;
+    }
+  }
+
+
+@media (min-width: 1441px) and (max-width: 1728px) {
+  .perks-title-line h2 {
+    font-family: 'Gilroy-Medium', sans-serif;
+    font-weight: 400;
+    font-size: 33px;
+    line-height: 100%;
+    letter-spacing: -0.06em;
+    color: #000000;
+    margin: 19px -131px;
+    width: 100%;
+    max-width: 1468px;
+    height: auto;
+    text-align: center;
+            margin-left: -118px;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1728px) {
+  .perks-horizontal-line {
+        width: 848px;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.2);
+        margin-right: -40px;
+        position: relative;
+        left: -22px;
+        flex-shrink: 0;
+    }
+  
+
+  .perks-subtitle {
+    position: relative;
+    left: -494px;
     top: 40px;
     margin-top: 20px;
     width: 445px;
     height: 72px;
+  }
 }
 
+
+@media (max-width: 912px) {
+  .banner-text h1 {
+    font-size: 73px;
+    }
+  
+
+  .banner-text p {
+    font-size: 16px;
+    max-width: 90%;
+  }
+
+  .booking-options {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .booking-card {
+    width: 90%;
+    max-width: 360px;
+  }
+
+  .perks-title-line h2 {
+    font-size: 39px;
+    width: 100%;
+    text-align: center;
+    margin: 50px auto;
+  }
+
+  .perks-horizontal-line {
+    width: 600px;
+    display: none;
+  }
+
+      .perks-subtitle {
+        position: relative;
+        width: 100%;
+        max-width: 445px;
+        margin: 20px auto;
+        text-align: center;
+        left: 6px;
+    }
+
+
+  .partner-logos img {
+    width: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-text h1 {
+    font-size: 60px;
+  }
+
+  .banner-text p {
+    font-size: 15px;
+    max-width: 90%;
+  }
+
+  .booking-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .perks-title-line h2 {
+    font-size: 37px;
+    margin: 41px auto;
+    width: 100%;
+    text-align: center;
+  }
+
+  .perks-horizontal-line {
+    width: 500px;
+    display: none;
+  }
+
+      .perks-subtitle {
+        position: relative;
+        width: 100%;
+        max-width: 400px;
+        margin: 25px auto;
+        text-align: center;
+        left: 183px;
+    }
+
+
+  .partner-logos img {
+    width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .banner-text h1 {
+    font-size: 28px;
+  }
+
+  .banner-text p {
+    font-size: 14px;
+  }
+
+  .booking-section {
+    padding: 20px;
+    width: 95%;
+  }
+
+  .booking-card {
+    padding: 16px;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .perks-title-line h2 {
+    font-size: 20px;
+  }
+
+  .perks-horizontal-line {
+    width: 300px;
+    display: none;
+  }
+
+  .perks-subtitle {
+    max-width: 90%;
+    font-size: 14px;
+  }
+
+  .partner-logos img {
+    width: 120px;
+  }
+}
+
+@media (max-width: 375px) {
+  .banner-text h1 {
+    font-size: 24px;
+  }
+
+  .banner-text p {
+    font-size: 13px;
+  }
+
+  .booking-card h3 {
+    font-size: 16px;
+  }
+
+  .perks-title-line h2 {
+    font-size: 18px;
+    position: relative;
+    top: -37px;
+  }
+
+  .perks-horizontal-line {
+    width: 260px;
+    display: none;
+  }
+
+  .partner-logos img {
+    width: 100px;
+  }
+
+  .footer-content {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 912px) {
+  .banner-text {
+    width: 100%;
+    max-width: 520px;
+    margin: 0 auto 25px;
+    text-align: center;
+  }
+
+  .banner-img {
+    width: 100%;
+    max-width: 520px;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    display: block !important;
+  }
+}
+
+@media (max-width: 912px) {
+  .perk-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 20px;
+    margin-top: -67px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .perk-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        padding: 20px 16px;
+        margin-top: -78px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+  .perk-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 16px;
+    margin-top: 40px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 375px) {
+  .perk-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 12px;
+    margin-top: 30px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Navbar */
+  .navbar-brand {
+    font-size: 35px !important;
+  }
+
+  /* Banner Section */
+      .banner-text {
+        max-width: 90%;
+        margin: 11px auto 14px;
+        text-align: center;
+    }
+
+
+  .banner-text h1 {
+    font-size: 56px;
+  }
+
+  .banner-text p {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 21px;
+  }
+
+  .banner-img {
+    max-width: 100%;
+    height: 240px;
+  }
+
+  .banner-img img {
+    border-radius: 10px;
+  }
+
+  /* Booking Section */
+  .booking-section {
+    padding: 20px;
+    width: 95%;
+  }
+
+  .booking-options {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .booking-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .booking-card h3 {
+    font-size: 16px;
+  }
+
+  /* Perks Section */
+  .perks-title-line h2 {
+        font-size: 32px;
+        text-align: center;
+  }
+
+  .perks-horizontal-line {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+      .perks-subtitle p {
+        font-size: 9px;
+        text-align: center;
+        left: 62px;
+        position: relative;
+        width: 229px;
+        height: 72px;
+    }
+
+
+      .perk-cards {
+        flex-direction: column;
+        gap: 65px;
+        padding: 12px;
+        align-items: center;
+        top: -158px;
+        position: relative;
+        margin-top: 83px;
+    }
+
+      .perk-card {
+        width: 130%;
+        height: 331px;
+        max-width: 267px;
+    }
+
+  .perk-text,
+  .perk-price,
+  .perk-subtext {
+    font-size: 14px;
+    text-align: center;
+    font-size: 20px;
+        
+  }
+
+  .perks-link a {
+    font-size: 14px;
+  }
+
+  /* FAQ Section */
+  .faq-heading-title {
+    font-size: 34px;
+    text-align: center;
+    
+  }
+
+  .faq-intro h2 {
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    top: -35px;
+  }
+
+  .faq-question-v2 {
+    font-size: 16px;
+  }
+
+  .faq-answer-v2 p {
+    font-size: 14px;
+  }
+
+  /* Testimonials */
+  .testimonials-header h2 {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .testimonial-text {
+    font-size: 14px;
+  }
+
+  .reviewer-info .name,
+  .reviewer-info .country {
+    font-size: 14px;
+  }
+
+  .testimonial-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  /* About Section */
+  .about-title {
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .about-description {
+    font-size: 14px;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  /* Partners */
+  .partners-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .partner-logos {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .partner-logos img {
+    width: 120px;
+    margin: 0 auto;
+  }
+
+  /* Footer */
+  .footer-content {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .secure-text,
+  .payment-logos img,
+  .copyright {
+    font-size: 12px;
+  }
+
+  .stripe-badge {
+    width: 100px;
+  }
+}
+
+@media (max-width: 912px) {
+  .faq-layout {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-layout {
+    flex-direction: column;
+    gap: 32px;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq-layout {
+    flex-direction: column;
+    gap: 24px;
+    align-items: center;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 375px) {
+  .faq-layout {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 912px) {
+  .testimonials-header p {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 60px;
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-header p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 50px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials-header p {
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 0 10px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .testimonials-header p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    padding: 0 8px;
+  }
+}
+
+@media (max-width: 912px) {
+  .booking-card:hover {
+    background-color: #0A4F34;
+    border-radius: 14px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .booking-card:hover {
+    background-color: #0A4F34;
+    border-radius: 12px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-card:hover {
+    background-color: #0A4F34;
+    border-radius: 40px;
+    margin: 0;
+    width: 213px;
+  }
+}
+
+@media (max-width: 375px) {
+  .booking-card:hover {
+    background-color: #0A4F34;
+    border-radius: 8px;
+    margin: 0;
+  }
+}
+
+@media (max-width: 912px) {
+  .booking-section {
+        padding: 30px;
+        width: 95%;
+        max-width: 698px;
+        margin: 30px auto;
+        border-radius: 24px;
+        top: -95px;
+    }
+}
+
+@media (max-width: 768px) {
+  .booking-section {
+    padding: 24px;
+    width: 95%;
+    max-width: 592px;
+    margin: 24px auto;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-section {
+    padding: 20px;
+    width: 84%;
+    max-width: 133%;
+    margin: 20px auto;
+    border-radius: 16px;
+  }
+}
+
+@media (max-width: 375px) {
+  .booking-section {
+    padding: 16px;
+    width: 71%;
+    max-width: 100%;
+    margin: 16px auto;
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 912px) {
+  .perks-subtitle p {
+    font-size: 18px;
+    text-align: center;
+    width: 100%;
+    max-width: 445px;
+    height: auto;
+    margin: 0 auto;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 768px) {
+  .perks-subtitle p {
+    font-size: 16px;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
+    line-height: 1.5;
+    position: relative;
+    left: -181px;
+  }
+}
+
+@media (max-width: 480px) {
+  .perks-subtitle p {
+    font-size: 14px;
+    text-align: center;
+    width: 100%;
+    padding: 0 10px;
+    height: auto;
+    margin: 0 auto;
+    line-height: 1.6;
+    top: -25px;
+  }
+}
+
+@media (max-width: 375px) {
+  .perks-subtitle p {
+    font-size: 11px;
+    text-align: center;
+    width: 100%;
+    padding: 0 8px;
+    height: auto;
+    margin: 0 auto;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .booking-card {
+    width: 90%;
+    max-width: 320px;
+    background-color: #0a4f34;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 13px;
+    margin: 10px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    text-align: center;
+  }
+
+  .booking-card:hover {
+    transform: scale(1.02);
+    background-color: #06643f;
+  }
+
+  .booking-card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+    filter: brightness(0) invert(1); /* white icon on dark button */
+  }
+
+  .booking-card h3 {
+    font-size: 18px;
+    color: #ffffff;
+    margin: 0;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1728px) {
+  .booking-section {
+    max-width: 1309px;
+        margin: -55px auto;
+            padding: 0px 0px;
+    box-sizing: border-box;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1728px) {
+  .perks-section {
+    background-color: #F3F8F7;
+    padding: 44px 60px; /* corrected negative value */
+    width: 100%;
+    margin-top: 100px;
+    box-sizing: border-box;
+  }
 }

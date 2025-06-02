@@ -425,3 +425,225 @@
     margin-right: 0;
   }
 }
+
+/* Common Mobile Layout (max-width: 768px) */
+@media (max-width: 768px) {
+  .tour-detail-wrapper {
+    padding: 16px;
+    margin-top: 40px;
+  }
+
+  .tour-banner-wrapper {
+    margin-top: 60px;
+    padding: 0 12px;
+  }
+
+  .tour-header h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .co-tour {
+    font-size: 16px;
+  }
+
+  .tour-tags .tag {
+    font-size: 16px;
+    height: auto;
+    padding: 8px 10px;
+  }
+
+  .rating-block .score,
+  .reviews {
+    font-size: 12px;
+  }
+
+  .about-box {
+    padding: 20px;
+    min-width: 100%;
+  }
+
+  .subtext {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .price-box {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+
+  .book-btn {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .info-list li {
+    font-size: 14px;
+    margin-bottom: 16px;
+  }
+
+  .info-list li div {
+    font-size: 14px;
+  }
+}
+
+/* Compact Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .tour-header h1 {
+    font-size: 22px;
+  }
+
+  .tag {
+    font-size: 14px;
+    padding: 6px 10px;
+  }
+
+  .rating-block {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .section-title {
+    font-size: 20px;
+  }
+
+  .subtext {
+    font-size: 14px;
+  }
+
+  .price-amount {
+    font-size: 22px;
+  }
+
+  .price-label {
+    font-size: 18px;
+  }
+
+  .info-list {
+    font-size: 14px;
+  }
+
+  .book-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Very Small Phones (max-width: 375px) */
+@media (max-width: 375px) {
+  .tour-detail-wrapper {
+    padding: 10px;
+  }
+
+  .tour-header h1 {
+    font-size: 20px;
+  }
+
+  .tag {
+    font-size: 13px;
+  }
+
+  .rating-block .stars {
+    font-size: 16px;
+  }
+
+  .price-box {
+    padding: 16px;
+  }
+
+  .book-btn {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 912px) {
+  .tour-detail-wrapper {
+    padding: 24px;
+    margin-top: 60px;
+  }
+
+  .tour-header h1 {
+    font-size: 48px;
+    text-align: center;
+  }
+
+  .co-tour {
+    font-size: 20px;
+  }
+
+  .tour-meta-row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .meta-flex {
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
+  }
+
+  .tour-tags {
+    justify-content: center;
+  }
+
+  .tag {
+    font-size: 18px;
+    padding: 8px 12px;
+  }
+
+  .rating-block {
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .about-box {
+    padding: 24px;
+    min-width: 100%;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .subtext {
+    font-size: 16px;
+    padding-left: 12px;
+  }
+
+  .price-box {
+    max-width: 350px;
+    width: 100%;
+    margin: 30px auto;
+            top: -107px;
+        position: relative;
+        margin-bottom: -99px;
+    
+  }
+
+  .price-amount {
+    font-size: 24px;
+  }
+
+  .price-label {
+    font-size: 20px;
+  }
+
+  .book-btn {
+    width: 100%;
+    font-size: 15px;
+  }
+
+  .info-list li,
+  .info-list li div {
+    font-size: 15px;
+  }
+}
+

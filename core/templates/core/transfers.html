@@ -67,49 +67,50 @@
   </div>
 
   <!-- Transfer Listings -->
-  <section class="transfers-section">
-    <div class="transfers-header-line">
-      <h2>Featured Transfers</h2>
-      <div class="header-line"></div>
-    </div>
-    <p class="transfers-subtitle-right">
-      Seamless, Comfortable & Affordable Rides to Your Destination
-    </p>
+<section class="transfers-section">
+  <div class="transfers-header-line">
+    <h2>Featured Transfers</h2>
+    <div class="header-line"></div>
+  </div>
+  <p class="transfers-subtitle-right">
+    Seamless, Comfortable & Affordable Rides to Your Destination
+  </p>
 
-    <div class="table-responsive">
-      <table class="transfer-table">
-        <thead>
-          <tr>
-            <th>From</th>
-            <th>To</th>
-            <th>Mode</th>
-            <th>Duration</th>
-            <th>Price</th>
-            <th></th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for transfer in transfers %}
-          <tr>
-            <td>{{ transfer.from_city }}</td>
-            <td>{{ transfer.to_city }}</td>
-            <td>{{ transfer.journey_type }}</td>
-            <td>{{ transfer.duration }}</td>
-            <td>
-              {% if transfer.original_price %}
-                <del>RM {{ transfer.original_price }}</del>
-              {% endif %}
-              <strong>RM {{ transfer.price }}</strong>
-            </td>
-            <td>
-              <a href="{% url 'confirm_transfer' %}?from={{ transfer.from_city|urlencode }}&to={{ transfer.to_city|urlencode }}&date=22+Apr+2025" class="book-btn">Book</a>
-            </td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
-  </section>
+  <div class="table-responsive">
+    <table class="transfer-table">
+      <thead>
+        <tr>
+          <th>From</th>
+          <th>To</th>
+          <th>Mode</th>
+          <th>Duration</th>
+          <th>Price</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for transfer in transfers %}
+        <tr>
+          <td data-label="From">{{ transfer.from_city }}</td>
+          <td data-label="To">{{ transfer.to_city }}</td>
+          <td data-label="Mode">{{ transfer.journey_type }}</td>
+          <td data-label="Duration">{{ transfer.duration }}</td>
+          <td data-label="Price">
+            {% if transfer.original_price %}
+              <del>RM {{ transfer.original_price }}</del><br>
+            {% endif %}
+            <strong>RM {{ transfer.price }}</strong>
+          </td>
+          <td data-label="">
+            <a href="{% url 'confirm_transfer' %}?from={{ transfer.from_city|urlencode }}&to={{ transfer.to_city|urlencode }}&date=22+Apr+2025" class="book-btn">Book</a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</section>
+
 
   <!-- Scripts -->
   <script src="{% static 'core/js/transfer.js' %}"></script>

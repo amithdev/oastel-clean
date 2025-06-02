@@ -23,15 +23,14 @@ def payment_success(request):
 def payment_cancel(request):
     return render(request, 'core/payment_cancel.html')
 
-def book_transfers(request):
-    return render(request, 'core/transfers.html')
+
+    
 
 def book_transfers(request):
     cities = City.objects.all()
     return render(request, 'core/transfers.html', {'cities': cities})
 
 
-import stripe
 from django.conf import settings
 from django.shortcuts import redirect
 from django.views.decorators.csrf import csrf_exempt
@@ -39,7 +38,24 @@ from django.http import JsonResponse
 import json
 
 
+import stripe
+import ssl
+import certifi
+import urllib3
+from stripe.http_client import RequestsClient
+
+
+
+# ✅ Set Stripe API Key
 stripe.api_key = settings.STRIPE_SECRET_KEY
+
+# ✅ Force Stripe to use certifi's trusted CA bundle
+stripe.verify_ssl_certs = True
+stripe.default_http_client = RequestsClient(
+    verify_ssl_certs=True,
+    ca_bundle_path=certifi.where()
+)
+
 
 @csrf_exempt
 def create_checkout_session(request):

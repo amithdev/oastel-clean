@@ -205,9 +205,10 @@
   const stripe = Stripe("pk_test_51RCu9ARXfGYEOI0DFn5nqNrglVkMv7nKaXs5KbmbMqeyRjxzRjMFmNirveeO5HykLkPWPN2l4GNcjSTjGLQKTd4o006FhasZqT");  // your publishable key
 </script>
 
-<script>
-  const minTravelers = {{ tour.min_travelers }};
+<script type="text/javascript">
+  const minTravelers = parseInt("{{ tour.min_travelers|default:'0' }}");
 </script>
+
 
 <script
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCth5rYzXAhrYyTrxZnIuzMPb9sMqSEd44&libraries=places&callback=initAutocomplete"

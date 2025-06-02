@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
     <meta charset="UTF-8">
     <title>Oastel - Explore Malaysia</title>
 
@@ -46,7 +48,7 @@
 
     <section class="booking-section">
       <div class="booking-options">
-    
+
         <!-- Book Stay -->
         <div class="booking-card" onclick="window.location.href='https://booking.exely.com/en/oastel/'">
           <div class="booking-card-inner">
@@ -55,25 +57,24 @@
           </div>
         </div>
 
-    
-        <!-- Book Tours -->
-        <div class="booking-card" onclick="window.location.href='{% url 'tours' %}'">
+        <a href="{% url 'tours' %}" class="booking-card">
           <div class="booking-card-inner">
             <img src="{% static 'core/images/trips.png' %}" alt="Book Tours Icon">
             <h3>Book Tours</h3>
           </div>
-        </div>
-    
-        <!-- Book Transfer -->
-        <div class="booking-card" onclick="window.location.href='{% url 'book_transfers' %}'">
+        </a>
+
+        <a href="{% url 'book_transfers' %}" class="booking-card">
           <div class="booking-card-inner">
             <img src="{% static 'core/images/transfer.png' %}" alt="Book Transfer Icon">
             <h3>Book Transfer</h3>
           </div>
-        </div>
-    
+        </a>
+
+
       </div>
-    </section>
+</section>
+
     
 
     <!-- Exclusive Perks Section -->
