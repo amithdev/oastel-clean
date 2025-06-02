@@ -2020,3 +2020,46 @@ html {
     box-sizing: border-box;
   }
 }
+
+@media (min-width: 376px) and (max-width: 480px) {
+    .perks-title-line h2 {
+        font-size: 32px;
+        text-align: center;
+                margin-bottom: 100px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 480px) {
+    .featured-tours-header h2 {
+        font-size: 37px;
+        white-space: normal;
+        text-align: center;
+                margin-left: 11px;
+
+    }
+}
+
+@media (min-width: 376px) and (max-width: 480px) {
+    .private-tours-header h2 {
+        font-size: 37px;
+        white-space: normal;
+        text-align: center;
+        margin-left: 23px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 480px) {
+  .featured-subtext {
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 69px;
+    margin-bottom: 24px;
+            margin-left: 3px;
+    padding: 0 12px;
+  }
+}
+
+
+
+

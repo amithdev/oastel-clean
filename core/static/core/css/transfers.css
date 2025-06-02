@@ -1676,3 +1676,19 @@ html, body {
   }
 }
 
+@media (min-width: 376px) and (max-width: 480px) {
+  .transfer-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    position: relative;
+    left: 5px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 480px) {
+  .table-responsive {
+    overflow-x: hidden;
+    box-sizing: border-box;
+  }
+}
