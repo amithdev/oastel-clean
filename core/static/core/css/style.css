@@ -2062,4 +2062,74 @@ html {
 
 
 
+  
+@media (max-width: 480px) {
+    .perk-cards {
+        display: flex;
 
+        flex-direction: row;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        gap: 16px;
+        padding: 12px;
+        margin-top: 122px;
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+
+  .perk-cards::-webkit-scrollbar {
+    display: none;
+  }
+
+  .perk-card {
+    flex: 0 0 80%; /* 🔥 Take 80% of the screen */
+    scroll-snap-align: start;
+    box-sizing: border-box;
+  }
+}
+
+
+
+
+
+@media (min-width: 481px) and (max-width: 912px) {
+  .perk-cards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 16px;
+    padding: 12px;
+            margin-top: -73px;
+    -webkit-overflow-scrolling: touch;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+            height: 532px;
+  }
+
+  .perk-card {
+    flex: 0 0 70%; /* Slightly smaller card for mid-size screens */
+    scroll-snap-align: start;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 16px;
+  }
+
+  .perk-card img {
+    width: 100%;
+    
+    border-radius: 10px;
+  }
+
+  .perk-text,
+  .perk-price,
+  .perk-subtext {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .perk-cards::-webkit-scrollbar {
+    display: none;
+  }
+}
