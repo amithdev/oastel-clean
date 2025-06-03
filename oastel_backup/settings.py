@@ -212,7 +212,8 @@ import os
 
 DEBUG = os.getenv('DEBUG', 'False') == 'True'
 
-ALLOWED_HOSTS = ['oastel-clean.onrender.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['oastel.my', 'www.oastel.my', 'oastel-clean.onrender.com']
+
 
 
 
