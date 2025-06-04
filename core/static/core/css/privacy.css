@@ -1,0 +1,126 @@
+/* === Base Desktop Styles (1440px and up) === */
+.about-box {
+  padding: 30px;
+}
+
+.terms-container {
+  padding: 0 20px;
+}
+
+/* Large Screens: 1281px to 1439px */
+@media (max-width: 1439px) {
+  .about-box {
+    padding: 24px;
+  }
+}
+
+/* Medium Screens: 1025px to 1280px */
+@media (max-width: 1280px) {
+  .terms-container {
+    max-width: 95%;
+  }
+
+  .about-box {
+    padding: 20px;
+    min-width: auto;
+  }
+}
+
+/* Tablets: 769px to 1024px */
+@media (max-width: 1024px) {
+  .terms-container {
+    margin: 40px auto;
+    padding: 0 15px;
+  }
+
+  .about-box {
+    padding: 20px;
+    font-size: 15px;
+  }
+
+  .about-box h2 {
+    font-size: 24px;
+  }
+}
+
+/* Mobile & Small Tablets: 481px to 768px */
+@media (max-width: 768px) {
+  .terms-container {
+    margin: 30px auto;
+  }
+
+  .about-box {
+    padding: 18px;
+  }
+
+  .about-box h2 {
+    font-size: 22px;
+  }
+
+  .about-box ul li {
+    font-size: 14px;
+  }
+}
+
+/* Extra Small Mobiles: up to 480px */
+@media (max-width: 480px) {
+  .terms-container {
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+
+  .about-box {
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  .about-box h2 {
+    font-size: 20px;
+  }
+
+  .about-box ul {
+    padding-left: 15px;
+  }
+
+  .about-box ul li {
+    line-height: 1.5;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .terms-container {
+    max-width: 100% !important;
+    margin: 30px auto !important;
+    padding: 0 12px !important;
+    display: flex !important;
+    justify-content: center !important;
+    flex-direction: column !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-box {
+    flex: 1 !important;
+    background: #f7f7f7 !important;
+    padding: 24px !important;
+    border-radius: 12px !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    left: 0 !important;
+    position: relative !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 912px) {
+  .about-box {
+    flex: 1 !important;
+    background: #f7f7f7 !important;
+    padding: 28px !important;
+    border-radius: 12px !important;
+    min-width: 100% !important;
+    max-width: 100% !important;
+    left: 0 !important;
+    position: relative !important;
+  }
+}

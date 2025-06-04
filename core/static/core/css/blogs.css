@@ -281,3 +281,342 @@
     font-size: 14px;
   }
 }
+
+
+/* === Responsive Media Queries === */
+
+@media (max-width: 1439px) {
+  .blogs-banner,
+  .exclusive-perks,
+  .oastel-blogs {
+    padding: 40px 100px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .blogs-banner,
+  .exclusive-perks,
+  .oastel-blogs {
+    padding: 32px 80px;
+  }
+
+  .perk-card {
+    width: 200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .blogs-banner,
+  .exclusive-perks,
+  .oastel-blogs {
+    padding: 24px 60px;
+  }
+
+  .perk-card {
+    width: 180px;
+  }
+
+  .blog-card {
+    width: 90%;
+    max-width: 340px;
+  }
+}
+
+@media (max-width: 768px) {
+  .perk-cards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding: 12px;
+    flex-wrap: nowrap;
+  }
+
+  .perk-card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    min-width: 220px;
+  }
+
+  .blog-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-card {
+    width: 90%;
+    max-width: 340px;
+  }
+
+  .blogs-banner,
+  .exclusive-perks,
+  .oastel-blogs {
+    padding: 24px;
+    margin: 20px auto;
+  }
+
+  .blogs-banner h1 {
+    font-size: 28px;
+  }
+
+  .blogs-banner p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .perk-card {
+    min-width: 200px;
+  }
+
+  .blog-card {
+    width: 95%;
+  }
+
+  .blogs-banner h1 {
+    font-size: 24px;
+  }
+
+  .blogs-banner p {
+    font-size: 14px;
+  }
+}
+
+/* === Perks Horizontal Line Responsive === */
+
+/* Large Screens (1441px - 1728px) */
+@media (min-width: 1441px) and (max-width: 1728px) {
+  .perks-horizontal-line {
+    width: 710px;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin-right: 68px;
+    position: relative;
+    left: 69px;
+    flex-shrink: 0;
+  }
+}
+
+/* Default (Above 1728px) */
+@media (min-width: 1729px) {
+  .perks-horizontal-line {
+    width: 780px;
+    left: 85px;
+    margin-right: 75px;
+  }
+}
+
+/* Medium Screens (1025px - 1440px) */
+@media (max-width: 1440px) {
+  .perks-horizontal-line {
+    width: 600px;
+    left: 50px;
+    margin-right: 50px;
+  }
+}
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+  .perks-horizontal-line {
+    width: 480px;
+    left: 40px;
+    margin-right: 40px;
+  }
+}
+
+/* Mobile (up to 767px) */
+@media (max-width: 767px) {
+  .perks-horizontal-line {
+    width: 100%;
+    left: 0;
+    margin: 20px auto;
+  }
+}
+
+.perks-horizontal-line {
+  width: 710px !important;
+  height: 1px !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  margin-right: 68px !important;
+  position: relative !important;
+  left: 69px !important;
+  flex-shrink: 0 !important;
+}
+
+@media (min-width: 1441px) and (max-width: 1728px) {
+  .perks-horizontal-line {
+    width: 710px !important;
+    height: 1px !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    margin-right: 68px !important;
+    position: relative !important;
+    left: 69px !important;
+    flex-shrink: 0 !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  .perks-horizontal-line {
+    width: 747px !important;
+    height: 1px !important;
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    margin-right: -20px !important;
+    flex-shrink: 0 !important;
+    left: -8px !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .perks-horizontal-line {
+    width: 524px !important;
+        height: 1px !important;
+        background-color: rgba(0, 0, 0, 0.2) !important;
+        margin-right: -10px !important;
+        flex-shrink: 0 !important;
+                left: -17px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .perks-subtitle {
+    margin: 20px auto !important;
+    width: 100% !important;
+    max-width: 445px !important;
+    text-align: center !important;
+    left: 230px !important;
+    top: -68px !important;
+    position: relative !important;
+    margin-bottom: -150px !important;
+  }
+}
+
+@media (max-width: 912px) {
+  .perks-title-line {
+    display: flex !important;
+    align-items: center !important;
+    gap: 20px !important;
+    flex-shrink: 0 !important;
+    width: 100% !important;
+    max-width: 1443px !important;
+    top: -33px !important;
+    position: relative !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .perks-header {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 142px !important;
+  }
+}
+
+@media (max-width: 912px) {
+  .perks-subtitle {
+    margin: 20px auto !important;
+    width: 100% !important;
+    max-width: 445px !important;
+    text-align: center !important;
+    left: 4px !important;
+    top: -232px !important;
+    position: relative !important;
+    margin-bottom: -150px !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .blogs-banner {
+    padding: 48px !important;
+    margin: 81px 20px !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .perks-title-line {
+    display: flex !important;
+    align-items: center !important;
+    gap: 20px !important;
+    flex-shrink: 0 !important;
+    width: 100% !important;
+    max-width: 1443px !important;
+            top: -60px !important;
+    position: relative !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+      .perks-subtitle {
+        margin: 20px auto !important;
+        width: 100% !important;
+        max-width: 445px !important;
+        text-align: center !important;
+        left: 170px !important;
+        top: -249px !important;
+        position: relative !important;
+        margin-bottom: -150px !important;
+    }
+
+}
+
+@media (max-width: 480px) {
+  .perks-subtitle {
+    position: relative !important;
+    width: 100% !important;
+    max-width: 400px !important;
+            margin: -20px !important;
+    text-align: center !important;
+    left: 183px !important;
+            margin-bottom: -190px !important;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .perk-card {
+    width: 130% !important;
+    height: 409px !important;
+    max-width: 267px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  
+  .oastel-blogs {
+    padding: 20px !important;
+            margin: -144px auto !important;
+          margin-bottom: 100px !important;
+  }
+}
+
+
+@media (max-width: 375px) {
+  .perks-header {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 204px !important;
+    margin-top: 16px !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 912px) {
+  .perks-header {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 174px !important;
+  }
+}
+
+@media (min-width: 361px) and (max-width: 480px) {
+  .perks-header {
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+            gap: 193px !important;
+  }
+}
