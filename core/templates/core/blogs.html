@@ -35,7 +35,7 @@
     <div class="perk-cards">
         {% for perk in perks %}
             <div class="perk-card">
-                <img src="{{ perk.image.url }}" alt="{{ perk.title }}">
+                <img src="{{ perk.image.url }}" alt="{{ perk.title }}" loading="lazy">
                 <p class="perk-text">{{ perk.title }}</p>
                 <h3 class="perk-price">{{ perk.price }}</h3>
                 {% if perk.subtext %}
@@ -51,19 +51,19 @@
   <h2>“Oastel Chronicles: Stories, Adventures & Insider Tips”</h2>
   <div class="blog-grid">
     <div class="blog-card">
-      <img src="{% static 'core/images/blog1.jpg' %}" alt="Blog 1">
+      <img src="{% static 'core/images/blog1.jpg' %}" alt="Blog 1" loading="lazy">
       <p>Find out the most breathtaking locations just a short ride away.</p>
     </div>
     <div class="blog-card">
-      <img src="{% static 'core/images/blog2.jpg' %}" alt="Blog 2">
+      <img src="{% static 'core/images/blog2.jpg' %}" alt="Blog 2" loading="lazy">
       <p>Adventure Diaries: The Ultimate Land Rover Road Trip</p>
     </div>
     <div class="blog-card">
-      <img src="{% static 'core/images/blog3.jpg' %}" alt="Blog 3">
+      <img src="{% static 'core/images/blog3.jpg' %}" alt="Blog 3" loading="lazy">
       <p>Local Flavors: Best Eateries You Can’t Miss</p>
     </div>
     <div class="blog-card">
-      <img src="{% static 'core/images/blog4.jpg' %}" alt="Blog 4">
+      <img src="{% static 'core/images/blog4.jpg' %}" alt="Blog 4" loading="lazy">
       <p>Enjoy 20% OFF – Tea Break. Special Offer!</p>
     </div>
   </div>

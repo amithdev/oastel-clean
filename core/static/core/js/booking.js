@@ -24,6 +24,9 @@
    // ✅ Read the tour type early
    const tourType = document.getElementById('tourTypeInput')?.value || 'featured';
    const isPrivateTour = document.getElementById('is_private_tour')?.value === "true";
+  const isTransfer = document.getElementById('is_transfer')?.value === "true";
+  const transferId = document.getElementById("transferIdInput")?.value;
+  const tourSlug = document.getElementById("tourSlugInput")?.value;
  
    // ✅ Prices
    adultPrice = parseFloat(document.getElementById("adultPriceText").getAttribute("data-price"));
@@ -93,7 +96,14 @@
      });
    });
  
-  
+  // ✅ Auto-fill selected date and check availability
+  const prefilledDate = document.getElementById("hiddenDate")?.value;
+  if (prefilledDate && transferId) {
+    const selectedDateSpan = document.getElementById("selectedDate");
+    selectedDateSpan.textContent = prefilledDate;
+    checkTransferAvailability(prefilledDate, transferId);
+  }
+
 
 
    const proceedToPaymentButton = document.getElementById("proceedToPaymentButton");

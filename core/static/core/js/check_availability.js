@@ -130,4 +130,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
     return cookieValue;
   }
+
+// ✅ Auto-check if date is prefilled (e.g., from transfer search form)
+if (hiddenDateInput?.value) {
+  const prefilledDate = hiddenDateInput.value;
+  const prefilledDateObj = new Date(prefilledDate);
+  selectedDateSpan.textContent = prefilledDateObj.toDateString();
+  fp.setDate(prefilledDate, true); // Visually set calendar
+  fp.config.onChange([prefilledDateObj], prefilledDate); // Trigger availability check
+}
+
 });

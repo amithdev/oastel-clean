@@ -33,8 +33,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
     for (let day = 1; day <= daysInMonth; day++) {
       const thisDate = new Date(year, month, day);
+      const isToday = thisDate.getDate() === today && thisDate.getMonth() === todayMonth && thisDate.getFullYear() === todayYear;
       const isPast = thisDate < new Date(todayYear, todayMonth, today);
-      calendarHTML += `<td class="${isPast ? 'disabled' : 'selectable'}">${day}</td>`;
+
+      // Disable both past dates and today
+      const isDisabled = isPast || isToday;
+      calendarHTML += `<td class="${isDisabled ? 'disabled' : 'selectable'}">${day}</td>`;
+
+      
       if ((firstDay + day) % 7 === 0) calendarHTML += '</tr><tr>';
     }
 

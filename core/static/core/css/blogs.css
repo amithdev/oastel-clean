@@ -135,3 +135,149 @@
     line-height: 1.4;
   }
   
+  @media (max-width: 768px) {
+  .perk-cards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding: 12px;
+    flex-wrap: nowrap;
+  }
+
+  .perk-card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    min-width: 220px;
+  }
+
+  .blog-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-card {
+    width: 90%;
+    max-width: 340px;
+  }
+
+  .blogs-banner,
+  .exclusive-perks,
+  .oastel-blogs {
+    padding: 24px;
+    margin: 20px auto;
+  }
+}
+/* === Base Desktop Styles (default for 1440px and up) === */
+/* Already applied in your original CSS */
+
+
+/* === Large Screens: 1281px to 1439px === */
+@media (max-width: 1439px) {
+  .blogs-banner,
+  .exclusive-perks,
+  .oastel-blogs {
+    padding: 40px 100px;
+  }
+}
+
+
+/* === Medium Screens: 1025px to 1280px === */
+@media (max-width: 1280px) {
+  .blogs-banner,
+  .exclusive-perks,
+  .oastel-blogs {
+    padding: 32px 80px;
+  }
+
+  .perk-card {
+    width: 200px;
+  }
+}
+
+
+/* === Tablets: 769px to 1024px === */
+@media (max-width: 1024px) {
+  .blogs-banner,
+  .exclusive-perks,
+  .oastel-blogs {
+    padding: 24px 60px;
+  }
+
+  .perk-card {
+    width: 180px;
+  }
+
+  .blog-card {
+    width: 90%;
+    max-width: 340px;
+  }
+}
+
+
+/* === Mobile & Small Tablets: 481px to 768px === */
+@media (max-width: 768px) {
+  .perk-cards {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding: 12px;
+    flex-wrap: nowrap;
+  }
+
+  .perk-card {
+    flex: 0 0 auto;
+    scroll-snap-align: start;
+    min-width: 220px;
+  }
+
+  .blog-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .blog-card {
+    width: 90%;
+    max-width: 340px;
+  }
+
+  .blogs-banner,
+  .exclusive-perks,
+  .oastel-blogs {
+    padding: 24px;
+    margin: 20px auto;
+  }
+
+  .blogs-banner h1 {
+    font-size: 28px;
+  }
+
+  .blogs-banner p {
+    font-size: 16px;
+  }
+}
+
+
+/* === Extra Small Mobiles: up to 480px === */
+@media (max-width: 480px) {
+  .perk-card {
+    min-width: 200px;
+  }
+
+  .blog-card {
+    width: 95%;
+  }
+
+  .blogs-banner h1 {
+    font-size: 24px;
+  }
+
+  .blogs-banner p {
+    font-size: 14px;
+  }
+}

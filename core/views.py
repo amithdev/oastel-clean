@@ -418,11 +418,29 @@ def confirm_transfer(request):
         return render(request, 'core/error.html', {'message': 'Transfer not found.'})
 
     # For GET request
-    from_city = request.GET.get('from')
-    to_city = request.GET.get('to')
-    date = request.GET.get('date')
+    from_city = request.GET.get('from', '').strip()
+    to_city = request.GET.get('to', '').strip()
+    from datetime import datetime
 
-    transfer = Transfer.objects.filter(from_city=from_city, to_city=to_city).first()
+    date_raw = request.GET.get('date')
+    date = None
+
+    if date_raw:
+        try:
+            parsed = datetime.strptime(date_raw, "%d %b %Y")  # e.g. 5 Jun 2025
+            date = parsed.strftime("%Y-%m-%d")  # → '2025-06-05'
+        except ValueError:
+            date = None  # fallback if date parsing fails
+
+
+    transfer = Transfer.objects.filter(
+        from_city__iexact=from_city,
+        to_city__iexact=to_city
+    ).first()
+
+    
+
+    
     if not transfer:
         return render(request, 'core/error.html', {'message': 'Transfer not found.'})
 
@@ -430,6 +448,7 @@ def confirm_transfer(request):
         'from_city': from_city,
         'to_city': to_city,
         'date': date,
+
         'price': transfer.price,
         'child_price': transfer.child_price,  # ✅ Add this
         'transfer': transfer,
