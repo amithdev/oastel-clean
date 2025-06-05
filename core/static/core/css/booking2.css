@@ -56,7 +56,7 @@
 
   .booking-left label {
     font-family: 'Gilroy-Medium', sans-serif;
-    font-size: 20px;
+        font-size: 28px;
     color: #000;
     margin-bottom: 10px;
     display: block;
@@ -949,12 +949,17 @@ input.invalid {
   }
 
   .total-label {
-    font-size: 24px;
+    font-size: 29px;
     text-align: center;
+    top: 58px;
+        position: relative;
   }
 
   .payment-btn {
     width: 100%;
+    left: -98px !important;
+    position: relative;
+    top: 75px;
   }
 }
 
@@ -1217,8 +1222,9 @@ input.invalid {
 @media (max-width: 912px) {
   .booking-right {
     width: 78%;
-    padding: 0;
-  }
+        padding: 0;
+                margin-top: -28px;
+}
 }
 
 @media (max-width: 768px) {
@@ -1256,7 +1262,7 @@ input.invalid {
   .booking-note {
     margin-top: 4px;
     width: 100%;
-    margin-bottom: 100px;
+            margin-bottom: 180px;
   }
 }
 
@@ -1276,7 +1282,7 @@ input.invalid {
   }
 }
 
-@media (min-width: 376px) and (max-width: 480px) {
+@media (min-width: 376px) and (max-width: 479px) {
   .datetime {
     width: 75%;
     left: 14px;
@@ -1285,7 +1291,7 @@ input.invalid {
   }
 }
 
-@media (min-width: 376px) and (max-width: 480px) {
+@media (min-width: 376px) and (max-width: 479px) {
   .booking-left label {
     font-size: 15px;
     margin-bottom: 6px;
@@ -1294,7 +1300,7 @@ input.invalid {
   }
 }
 
-@media (min-width: 376px) and (max-width: 480px) {
+@media (min-width: 376px) and (max-width: 479px) {
   .traveller-box {
     width: 83%;
     max-width: 100%;
@@ -1316,7 +1322,7 @@ input.invalid {
     text-align: center;
     padding: 0 12px; /* Optional: helps maintain spacing on small screens */
     line-height: 1.4; /* Optional: improves readability on mobile */
-            margin-left: -69px;
+                    margin-left: 21px;
   }
 }
 
@@ -1367,5 +1373,356 @@ input.invalid {
     border: 1px solid #000 !important;
     border-radius: 0px !important;
     box-sizing: border-box !important;
+  }
+}
+
+@media (max-width: 912px) {
+  .total {
+        align-items: flex-start !important;
+        top: 75px;
+        position: relative;
+    
+  }
+}
+
+@media (max-width: 912px) {
+  .payment-btn {
+    margin-top: 10px !important;
+    padding: 14px 32px !important;
+    background: #0C7157 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 8px !important;
+    font-weight: 600 !important;
+    font-size: 16px !important;
+    cursor: pointer !important;
+    margin-left: 100px;
+  }
+}
+
+@media (max-width: 912px) {
+  .details-list {
+    margin-top: 10px !important;
+    padding-left: 189px !important;
+    font-size: 15px !important;
+    color: #333 !important;
+  }
+}
+
+@media (max-width: 912px) {
+      #hotelSearch {
+                width: 336% !important;
+        max-width: 358% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .details-list {
+        margin-top: 10px !important;
+        padding-left: 116px !important;
+        font-size: 15px !important;
+        color: #333 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #hotelSearch {
+                width: 370% !important;
+        max-width: 371% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .booking-left label {
+        font-size: 20px !important;
+        margin-bottom: 6px !important;
+        left: -10px !important;
+        position: relative !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .datetime {
+        width: 75% !important;
+        left: 52px !important;
+        gap: 20px !important;
+        margin-top: 20px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .traveller-box {
+        width: 83% !important;
+        max-width: 100% !important;
+        left: 3px !important;
+        height: auto !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        padding: 16px !important;
+        margin-bottom: 16px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .details-list {
+        margin-top: 10px !important;
+        padding-left: 35px !important;
+        font-size: 15px !important;
+        color: #333 !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #hotelSearch {
+        width: 228% !important;
+        max-width: 371% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .total-label {
+        font-size: 29px !important;
+        text-align: center !important;
+             top: 267px !important;
+        position: relative !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .payment-btn {
+        margin-top: 10px !important;
+        padding: 14px 32px !important;
+        background: #0C7157 !important;
+        color: #fff !important;
+        border: none !important;
+        border-radius: 8px !important;
+        font-weight: 600 !important;
+        font-size: 16px !important;
+        cursor: pointer !important;
+        margin-left: 98px !important;
+        top: 295px;
+    
+    }
+}
+
+@media (max-width: 480px) {
+    .booking-right {
+        width: 90% !important;
+        padding: 0 !important;
+                margin-top: -20px !important;
+
+        margin-bottom: 100px !important;
+    }
+}
+
+
+
+
+.map-expanded-adjustment {
+  margin-top: 180px !important; /* Adjust value as needed */
+}
+
+ @media (max-width: 912px) {
+  .privacy-link {
+    margin-left: 0 !important;
+
+        top: 56px;
+        position: relative;
+    
+  }
+}
+
+
+@media (max-width: 768px) {
+      .total {
+        align-items: flex-start !important;
+        top: -105px;
+        position: relative;
+        margin-bottom: -56px;
+      }
+}
+
+@media (max-width: 480px) {
+  .total {
+            align-items: flex-start !important;
+        top: -313px;
+        position: relative;
+  }
+}
+
+@media (max-width: 375px) {
+      .total {
+        align-items: flex-start !important;
+        top: -321px;
+        position: relative;
+    }
+}
+@media (max-width: 375px) {
+  .booking-left label {
+    font-size: 20px !important;
+    margin-bottom: 6px !important;
+    left: -27px !important;
+    position: relative !important;
+  }
+
+  .traveller-box {
+    width: 83% !important;
+    max-width: 100% !important;
+    left: -35px !important;
+    height: auto !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 16px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .details-list {
+    margin-top: 10px !important;
+    padding-left: 85px !important;
+    font-size: 15px !important;
+    color: #333 !important;
+    left: -66px;
+        position: relative;
+    
+  }
+}
+
+@media (max-width: 375px) {
+  .datetime {
+    width: 58% !important;
+    left: 54px !important;
+    gap: 20px !important;
+    margin-top: 20px !important;
+  }
+}
+
+@media (max-width: 375px) {
+    .important-info-box {
+        padding: 72px !important;
+        font-size: 13px !important;
+        margin-top: 4px !important;
+        width: 323px;
+    }
+}
+
+@media (max-width: 375px) {
+  #hotelSearch {
+    width: 174% !important;
+    max-width: 350% !important;
+  }
+}
+@media (max-width: 375px) {
+  #hotelSearch {
+    width: 192% !important;
+        max-width: 176% !important;
+    height: 44px !important;
+    padding: 10px !important;
+    font-size: 14px !important;
+    position: relative !important;
+    z-index: 10 !important;
+  }
+
+  .input-group {
+    position: relative !important;
+    z-index: 20 !important;
+  }
+
+  #hotelSuggestions {
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    width: 100% !important;
+    background: white !important;
+    border: 1px solid #ccc !important;
+    z-index: 9999 !important;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 479px) {
+  .booking-left label {
+    font-size: 15px !important;
+    margin-bottom: 6px !important;
+    left: -31px !important;
+    position: relative !important;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 479px) {
+  .datetime {
+    width: 75% !important;
+    left: 14px !important;
+    gap: 20px !important;
+    margin-top: 20px !important;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 479px) {
+  .traveller-box {
+    width: 83% !important;
+    max-width: 100% !important;
+    left: -36px !important;
+    height: auto !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    padding: 16px !important;
+    margin-bottom: 16px !important;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 479px) {
+  .details-list {
+        margin-top: 10px !important;
+        padding-left: 75px !important;
+        font-size: 15px !important;
+        color: #333 !important;
+        left: -58px;
+        position: relative;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 479px) {
+  .important-info-box {
+    background-color: #e8f9f1 !important;
+    border: 1px solid #0C7157 !important;
+    border-radius: 6px !important;
+    padding: 16px !important;
+    margin-top: 30px !important;
+    font-size: 14px !important;
+    color: #0C7157 !important;
+    font-family: 'Gilroy-Regular', sans-serif !important;
+    width: 328px;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 479px) {
+  #hotelSearch {
+            width: 174% !important;
+    max-width: 371% !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 911px) {
+  .datetime {
+    width: 45% !important;
+    left: 120px !important;
+    gap: 30px !important;
+    margin-top: 25px !important;
+  }
+}
+
+        
+@media (min-width: 481px) and (max-width: 911px) {
+  .details-list {
+    margin-top: 10px !important;
+    padding-left: 27px !important;
+    font-size: 15px !important;
+    color: #333 !important;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 911px) {
+  #hotelSearch {
+    width: 221% !important;
+    max-width: 371% !important;
   }
 }

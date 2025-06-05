@@ -31,6 +31,7 @@ window.initAutocomplete = function () {
             src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCth5rYzXAhrYyTrxZnIuzMPb9sMqSEd44&q=place_id:${place.place_id}">
           </iframe>
         `;
+        
       }
   
       // Clear suggestion dropdown if any (not required with Maps Autocomplete but safe)

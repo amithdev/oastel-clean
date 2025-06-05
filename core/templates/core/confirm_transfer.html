@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <title>Confirm Your Transfer</title>
   <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
-  <link rel="stylesheet" href="{% static 'core/css/booking.css' %}">
+  <link rel="stylesheet" href="{% static 'core/css/booking2.css' %}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
@@ -112,13 +112,7 @@
   </div>
   
     </div>
-        <!-- Total -->
-        <div class="section total">
-          <strong class="total-label">Total Price: <span id="totalPrice">{{ price }}</span> MYR</strong>
-          <button id="payButton" class="payment-btn">Proceed To Payment</button>
-        </div>
-      </div>
-
+    </div>  
       <!-- Right Column -->
       <div class="booking-right">
         <label class="section-label">Traveler Information :</label>
@@ -190,19 +184,35 @@
       <div class="default-pickup-note">
         *Pickup location is default for some certain locations.
       </div>
+
+      
     
       
       {% endif %}
       
-
-        
+      
+      
+      
       </div>
 
-    </div>
-  </div>
+      
 
-  <!-- Privacy Link -->
-  <a href="/privacy-policy" class="privacy-link">Privacy and Policy</a>
+      
+
+
+    </div>
+
+    
+    <!-- ✅ Total OUTSIDE of booking-content -->
+    <div class="section total">
+      <strong class="total-label">Total Price: <span id="totalPrice">{{ price }}</span> MYR</strong>
+      <button id="payButton" class="payment-btn">Proceed To Payment</button>
+    </div>
+
+    <!-- Privacy Link -->
+    <a href="/privacy-policy" class="privacy-link">Privacy and Policy</a>
+
+  </div>
 </section>
 
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
